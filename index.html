@@ -1,14 +1,42 @@
+
 <!DOCTYPE html>
 <html lang="ur" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Sukoon | سکون</title>
+
+  <meta name="theme-color" content="#276653">
+  <meta name="description" content="اسلامی طرز زندگی، روزانہ کی دعائیں، نیک اعمال اور ذہنی سکون">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="./manifest.json">
 </head>
+
 <body>
 
-  <h1>سکون</h1>
-  <p>اسلامی طرزِ زندگی اور ذہنی سکون</p>
+  <main id="app">
+    <h1>سکون</h1>
+    <p>اسلامی طرزِ زندگی اور ذہنی سکون</p>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="./app.js"></script>
+
+  <!-- Service Worker -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./sw.js")
+          .then(() => console.log("Sukoon Offline System Ready"))
+          .catch(error => console.error("Service Worker Error:", error));
+      });
+    }
+  </script>
 
 </body>
 </html>

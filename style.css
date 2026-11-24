@@ -1,0 +1,128 @@
+/* =====================================
+   SUKOON — MAIN DESIGN SYSTEM
+===================================== */
+
+:root {
+  --primary: #276653;
+  --primary-dark: #194638;
+  --primary-light: #e8f2ec;
+
+  --background: #f7f8f5;
+  --surface: #ffffff;
+
+  --text: #202b26;
+  --text-muted: #77817b;
+
+  --border: #e5e9e4;
+
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+
+  --shadow-soft: 0 4px 18px rgba(25, 70, 56, 0.06);
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* PAGE */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  direction: rtl;
+  text-align: right;
+  background: var(--background);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.8;
+}
+
+/* HEADINGS */
+h1, h2, h3, h4 {
+  color: var(--primary-dark);
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+/* PARAGRAPHS */
+p {
+  color: var(--text-muted);
+}
+
+/* BUTTONS */
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* LINKS */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* CARDS */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  box-shadow: var(--shadow-soft);
+}
+
+/* SECTION SPACING */
+.section {
+  padding: 24px 18px;
+}
+
+/* ICON CONTAINERS */
+.icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: var(--primary-light);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HIDDEN ELEMENT */
+.hidden {
+  display: none !important;
+}
+
+/* MOBILE FRIENDLY */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd8cf;
+  border-radius: 20px;
+}
+
+/* SELECTION */
+::selection {
+  background: #d8e9df;
+  color: var(--primary-dark);
+}

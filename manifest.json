@@ -1,0 +1,18 @@
+{
+  "name": "Sukoon - Islamic Lifestyle",
+  "short_name": "Sukoon",
+  "description": "Islamic lifestyle, daily duas, wellness and peaceful routines.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f7f8f5",
+  "theme_color": "#276653",
+  "lang": "ur",
+  "dir": "rtl",
+  "categories": [
+    "lifestyle",
+    "health",
+    "education"
+  ]
+}
